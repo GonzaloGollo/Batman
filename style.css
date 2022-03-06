@@ -39,18 +39,24 @@ body main h2 { /* todos los titulos chicos en barra gris del main */
     height: 30px;
     color:#005677 ;    
 }
+ 
 
-body main div.contenidoFondoBlanco p span  { /* Contenido dentro de cada seccion */
-    color:#080808 ;
-    font-weight:bold;
-    
+body main div ul span {
+   font-style: italic;
+   font-weight: bold;
+}
+
+.bold {    
+    font-weight: bold;
  }
 
+ .listadoSinBullets {
+    list-style: none;
+ }
 
 body footer nav{
     background-color: #005677;
     text-align: center; /* Pone el NAV en el centro de la pagina*/
-    top: 1800px;
 }
 
 body footer nav ul{
@@ -61,14 +67,11 @@ body footer nav ul{
     margin: auto;
     display: inline-flex; 
     justify-content: space-between;/*saca los bullets a la lista */
-    list-style: none;
     align-items: center;  /* Pone los 3 items de la lista en una sola linea  */
-    line-height: 16px;/*achico la altura de la linea para que se centren los 3 items en la linea */
-   
-    
+    line-height: 16px;/*achico la altura de la linea para que se centren los 3 items en la linea */    
 }
 
   body footer nav ul li p {
     margin-right: 8px; /*separa el lado derecho del  0800 batman a 8px   */
-    font-weight: bold;
+    text-transform: uppercase;
   }
